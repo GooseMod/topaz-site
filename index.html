@@ -1,6 +1,14 @@
 <head>
   <title>topaz</title>
+
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+  <meta itemprop="name" content="topaz">
+  <meta itemprop="description" content="topaz is a new and upcoming mod which aims to be the 'next-generation' by using new advanced tech to make previously difficult things possible. it aims to be minimal and easy to use whilst giving power-user control and new features only ever concepted.">
+  <meta property="og:title" content="topaz">
+  <meta property="og:description" content="topaz is a new and upcoming mod which aims to be the 'next-generation' by using new advanced tech to make previously difficult things possible. it aims to be minimal and easy to use whilst giving power-user control and new features only ever concepted.">
+  <meta property="og:type" content="website">
 
   <style>
     @font-face {
@@ -289,12 +297,21 @@
       background-clip: padding-box;
       border-radius: 12px;
     }
+
+    #caps {
+      float: right;
+      font-size: 24px;
+      color: var(--text-muted);
+
+      cursor: pointer;
+      user-select: none;
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <h1><span class="topaz">topaz</span> <code>alpha</code></h1>
+    <h1>topaz <code>alpha</code></h1>
 
     <div>
       <a href="https://github.com/GooseMod/topaz">github</a>
@@ -303,10 +320,10 @@
   </header>
 
   <article>
-    <h1 class="tagline"><span class="topaz">topaz</span> is a next-gen discord mod for all your needs</h1>
+    <h1 class="tagline">topaz is a next-gen discord mod for all your needs <div id="caps">want caps?</div></h1>
     <p>topaz is a new and upcoming mod which aims to be the "next-generation" by using new advanced tech to make previously difficult things possible. it aims to be minimal and easy to use whilst giving power-user control and new features only ever concepted. average user? enjoy a new mod experience. theme developer? relish seamless SCSS, amazing snippets, and more. plugin developer? use any mod API you want with the built-in editor.</p>
 
-    <h2><span class="topaz">topaz</span> brings new features to make a seamless, powerful mod</h2>
+    <h2>topaz brings new features to make a seamless, powerful mod</h2>
     <section class="cards">
       <div>
         <h1><svg width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path fill="currentColor" d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.982 2.982 0 0 0 0-4.24 2.982 2.982 0 0 0-4.24 0l-3.53 3.53a2.982 2.982 0 0 0 0 4.24zm2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.982 2.982 0 0 0 0 4.24 2.982 2.982 0 0 0 4.24 0l3.53-3.53a2.982 2.982 0 0 0 0-4.24.973.973 0 0 1 0-1.42z"></path><rect width="24" height="24"></rect></g></svg> easy installs</h1>
@@ -319,7 +336,7 @@
       </div>
 
       <div>
-        <h1><svg viewBox="0 0 20 20" width="24" height="24"><path fill="currentColor" d="M12.9297 3.25007C12.7343 3.05261 12.4154 3.05226 12.2196 3.24928L11.5746 3.89824C11.3811 4.09297 11.3808 4.40733 11.5739 4.60245L16.5685 9.64824C16.7614 9.84309 16.7614 10.1569 16.5685 10.3517L11.5739 15.3975C11.3808 15.5927 11.3811 15.907 11.5746 16.1017L12.2196 16.7507C12.4154 16.9477 12.7343 16.9474 12.9297 16.7499L19.2604 10.3517C19.4532 10.1568 19.4532 9.84314 19.2604 9.64832L12.9297 3.25007Z"></path><path fill="currentColor" d="M8.42616 4.60245C8.6193 4.40733 8.61898 4.09297 8.42545 3.89824L7.78047 3.24928C7.58466 3.05226 7.26578 3.05261 7.07041 3.25007L0.739669 9.64832C0.5469 9.84314 0.546901 10.1568 0.739669 10.3517L7.07041 16.7499C7.26578 16.9474 7.58465 16.9477 7.78047 16.7507L8.42545 16.1017C8.61898 15.907 8.6193 15.5927 8.42616 15.3975L3.43155 10.3517C3.23869 10.1569 3.23869 9.84309 3.43155 9.64824L8.42616 4.60245Z"></path></svg> compat</h1>
+        <h1><svg viewBox="0 0 20 20" width="24" height="24"><path fill="currentColor" d="M12.9297 3.25007C12.7343 3.05261 12.4154 3.05226 12.2196 3.24928L11.5746 3.89824C11.3811 4.09297 11.3808 4.40733 11.5739 4.60245L16.5685 9.64824C16.7614 9.84309 16.7614 10.1569 16.5685 10.3517L11.5739 15.3975C11.3808 15.5927 11.3811 15.907 11.5746 16.1017L12.2196 16.7507C12.4154 16.9477 12.7343 16.9474 12.9297 16.7499L19.2604 10.3517C19.4532 10.1568 19.4532 9.84314 19.2604 9.64832L12.9297 3.25007Z"></path><path fill="currentColor" d="M8.42616 4.60245C8.6193 4.40733 8.61898 4.09297 8.42545 3.89824L7.78047 3.24928C7.58466 3.05226 7.26578 3.05261 7.07041 3.25007L0.739669 9.64832C0.5469 9.84314 0.546901 10.1568 0.739669 10.3517L7.07041 16.7499C7.26578 16.9474 7.58465 16.9477 7.78047 16.7507L8.42545 16.1017C8.61898 15.907 8.6193 15.5927 8.42616 15.3975L3.43155 10.3517C3.23869 10.1569 3.23869 9.84309 3.43155 9.64824L8.42616 4.60245Z"></path></svg> compatibility</h1>
         <p>works with plugins and themes with basically any mod you want</p>
       </div>
 
@@ -344,7 +361,7 @@
       <h2><svg width="24" height="24" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><path fill="currentColor" d="M9.99999 1.66675C5.39699 1.66675 1.66666 5.39708 1.66666 10.0001C1.66666 14.6031 5.39699 18.3334 9.99999 18.3334C14.603 18.3334 18.3333 14.6031 18.3333 10.0001C18.3333 5.39708 14.603 1.66675 9.99999 1.66675ZM9.99999 4.66675C10.3685 4.66675 10.6667 4.96493 10.6667 5.33342V9.61475L13.8021 11.4272C14.1211 11.6108 14.2252 12.0145 14.0416 12.3335C13.8581 12.6525 13.4544 12.7567 13.1354 12.5731L9.73937 10.6148C9.71333 10.6043 9.68989 10.5874 9.66646 10.5731C9.46724 10.4572 9.33312 10.2463 9.33312 10.0002V5.3335C9.33312 4.965 9.6315 4.66675 9.99999 4.66675Z"></path></g></svg> topaz last updated <span id="stat_4">1 day ago</span></h2>
     </section>
 
-    <h2><span class="topaz">topaz</span> also eases creating plugins and themes for developers</h2>
+    <h2>topaz also eases creating plugins and themes for developers</h2>
     <section class="cards">
       <div>
         <h1><svg class="stroke" style="margin-top: 2px" height="32" width="24" viewBox="0 0 72 96"><path d="m72 29.3v60.3c0 2.24 0 3.36-.44 4.22-.38.74-1 1.36-1.74 1.74-.86.44-1.98.44-4.22.44h-59.2c-2.24 0-3.36 0-4.22-.44-.74-.38-1.36-1-1.74-1.74-.44-.86-.44-1.98-.44-4.22v-83.2c0-2.24 0-3.36.44-4.22.38-.74 1-1.36 1.74-1.74.86-.44 1.98-.44 4.22-.44h36.3c1.96 0 2.94 0 3.86.22.5.12.98.28 1.44.5v16.88c0 2.24 0 3.36.44 4.22.38.74 1 1.36 1.74 1.74.86.44 1.98.44 4.22.44h16.88c.22.46.38.94.5 1.44.22.92.22 1.9.22 3.86z" fill="currentColor"/><path d="m68.26 20.26c1.38 1.38 2.06 2.06 2.56 2.88.18.28.32.56.46.86h-16.88c-2.24 0-3.36 0-4.22-.44-.74-.38-1.36-1-1.74-1.74-.44-.86-.44-1.98-.44-4.22v-16.880029c.3.14.58.28.86.459999.82.5 1.5 1.18 2.88 2.56z" fill="var(--header-secondary)"/></svg> all filetypes supported</h1>
@@ -358,7 +375,7 @@
 
       <!-- <div>
         <h1><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM11 19.93C7.05 19.44 4 16.08 4 12C4 11.38 4.08 10.79 4.21 10.21L9 15V16C9 17.1 9.9 18 11 18V19.93ZM17.9 17.39C17.64 16.58 16.9 16 16 16H15V13C15 12.45 14.55 12 14 12H8V10H10C10.55 10 11 9.55 11 9V7H13C14.1 7 15 6.1 15 5V4.59C17.93 5.78 20 8.65 20 12C20 14.08 19.2 15.97 17.9 17.39Z"></path></svg> web support</h1>
-        <p>since <span class="topaz">topaz</span> works in web, you don't need to worry about it for your theme or plugin</p>
+        <p>since topaz works in web, you don't need to worry about it for your theme or plugin</p>
       </div> -->
 
       <!-- <div>
@@ -367,7 +384,7 @@
       </div> -->
     </section>
 
-    <h2>tech behind <span class="topaz">topaz</span></h2>
+    <h2>tech behind topaz</h2>
     <p>topaz has a custom from-scratch CSS and JS bundler made from scratch to work in the client without using node.js or the filesystem. not using node/filesystem allows topaz to both work in the browser and be more secure as it can not do sensitive native actions. additionally, topaz uses it's own execution environment allowing permissions and sandboxing for more security and privacy. topaz is completely open source under MIT so you are free to view and modify the source as you want. interested? <a href="https://github.com/GooseMod/topaz/wiki/Internals">you can read more about topaz's internals here</a></p>
   </article>
 
@@ -393,8 +410,6 @@
       if (x === '  themes: [') insideCat = themes;
       if (x === '  plugins: [') insideCat = plugins;
     }
-
-    console.log(plugins, themes);
 
     stat_1.textContent = Object.values(plugins).reduce((acc, x) => acc += x.length, 0);
     stat_2.textContent = Object.values(themes).reduce((acc, x) => acc += x.length, 0);
@@ -424,5 +439,21 @@
     };
 
     stat_4.textContent = prettyAgo(new Date(pushed_at));
+
+    caps.onclick = () => {
+      const texts = [...document.querySelectorAll('*')].map(x => [...x.childNodes].filter(x => x.nodeName === '#text')).flat();
+      for (let i = 0; i < texts.length; i++) {
+        const x = texts[i];
+        if (texts[i - 1]?.textContent === 'Topaz') continue;
+
+        x.textContent = x.textContent.replaceAll('github', 'GitHub');
+        x.textContent = x.textContent.replaceAll('topaz', 'Topaz');
+        x.textContent = x.textContent.replace(/(^ ?|[.?] )[a-z]/g, (_) => _.slice(0, _.length === 1 ? 0 : -1) + _[_.length - 1].toUpperCase());
+
+        if (x.parentElement?.nodeName === 'H1' && x.parentElement?.parentElement?.parentElement?.className === 'cards') x.textContent = x.textContent.replace(/(^| )[a-z]/g, _ => _.slice(0, _.length === 1 ? 0 : -1) + _[_.length - 1].toUpperCase());
+      }
+
+      caps.textContent = '';
+    }
   })();</script>
 </body>
