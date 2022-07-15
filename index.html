@@ -419,33 +419,16 @@
 
   <script> (async () => {
     const { pushed_at } = await (await fetch('https://api.github.com/repos/GooseMod/topaz')).json();
-    const genRec = await (await fetch('https://raw.githubusercontent.com/GooseMod/topaz/main/scripts/genPopular.js')).text();
+    const popular = await (await fetch('https://goosemod.github.io/topaz/popular.json')).json();
 
-    // const mods = [...genRec.matchAll(/^const [a-z]{1,3} =/gm)].length;
-    let plugins = {}, themes = {}, insideCat, insideMod;
-    for (const x of genRec.split('\n')) {
-      if (insideCat) {
-        if (x.includes("'")) {
-          if (!insideCat[insideMod]) insideCat[insideMod] = [];
-          if (!x.trim().startsWith('//')) insideCat[insideMod].push(x.split("'")[1]);
-        } else {
-          insideCat = null;
-        }
-      }
-
-      const modMatch = x.match(/^const ([a-z]{1,3}) = /);
-      if (modMatch) insideMod = modMatch[1];
-
-      if (x === '  themes: [') insideCat = themes;
-      if (x === '  plugins: [') insideCat = plugins;
-    }
+    const { stats: { mods, plugins, themes } } = popular;
 
     // const upperRound = x => Math.ceil(x / 10) * 10;
     const upperRound = x => x;
 
-    stat_1.textContent = upperRound(Object.values(plugins).reduce((acc, x) => acc += x.length, 0));
-    stat_2.textContent = upperRound(Object.values(themes).reduce((acc, x) => acc += x.length, 0));
-    stat_3.textContent = Object.keys(plugins).length;
+    stat_1.textContent = upperRound(plugins);
+    stat_2.textContent = upperRound(themes);
+    stat_3.textContent = mods;
 
     const prettyAgo = (timestamp) => {
       const intervals = [
