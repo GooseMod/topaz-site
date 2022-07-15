@@ -317,6 +317,12 @@
       cursor: pointer;
       user-select: none;
     }
+
+    video {
+      width: 80%;
+      display: block;
+      margin: auto;
+    }
   </style>
 </head>
 
@@ -396,6 +402,11 @@
         <p>advanced auto-generated theme settings allow your users to customize your theme with ease, with no work</p>
       </div> -->
     </section>
+
+    <h2>video showcase</h2>
+    <video controls>
+      <source type="video/mp4" src="demo.mp4">
+    </video>
 
     <h2>tech behind topaz</h2>
     <p>topaz has a custom CSS and JS bundler made from scratch to work in the client without using node.js or the filesystem. not using node/filesystem allows topaz to both work in the browser and be more secure as it can not do sensitive native actions. additionally, topaz uses it's own execution environment allowing permissions and sandboxing for more security and privacy. topaz is completely open source under MIT so you are free to view and modify the source as you want. interested? <a href="https://github.com/GooseMod/topaz/wiki/Internals">you can read more about topaz's internals here</a></p>
